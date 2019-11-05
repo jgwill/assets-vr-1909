@@ -6,13 +6,24 @@
 export xname="xMandelbrot" ;
 #Namespace of the result
 export resns="x__mandelbrot__191103__204__Animating_FractalNumber_TO_OBSERVE__90pc"
-# Succeeding action
-export suca="SSH to WPApp and update VR assets and create a new post with the OBSERVER"
+# @prompt Hint description of Next action suceeding what this does
+export naction="SSH to WPApp and update VR assets and create a new post with the OBSERVER"
+# Corrective action
+export caction="might be offline, retry executing $_"
+
 # current action state success/failure
-export ostate="VR Repo"
-export astate="PUSHED $ostate"
-export fstate="Could not PUSHED $ostate"
+# bellow are variable
+export obj="VR Repo"
+export verb="pushing"
+# bellow are constant
+export action="$verb $obj"
+export sstate="$action COMPLETED"
+export fstate="FAILED $action $ostate"
+
+# @messages Telling user what is the state after completing this action and what is the next step
+export msg_failed="$fstate ; $caction"
+export msg_success="$sstate ; $naction "
 
 git push &&\
-	ginol "$xname PUSHED ; $suca " \
-	|| ginol "$xname PUSH FAILED, might be offline so go to bash and re-execute this"
+	ginol "$msg_success " \
+	|| ginol "$msg_failed"
