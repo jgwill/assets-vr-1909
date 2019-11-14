@@ -1,0 +1,26 @@
+@startuml pipeline-gulp-state.png
+title Main States of the Gulp pipeline
+state exported
+state prompting
+state comitting
+state published
+
+exported --> prompting : specific research notes for the commit is ask to the user
+prompting --> comitting : VR is comitted
+
+@enduml
+@startuml pipeline-gulp-sequence.png
+title Main Sequence of the Gulp pipeline
+
+
+
+@enduml
+
+@startuml pipeline-gulp-class.png
+title Main Class of the Gulp pipeline
+
+class Req
+
+class Res
+
+@enduml
