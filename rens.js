@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //Rename a sequence of file starting from a number and bring it to 1.
 //ex.   0060-0100 will became 0001-0040
 //
