@@ -1,0 +1,26 @@
+{
+  "name": "assets-vr-1909c",
+  "version": "0.0.1",
+  "description": "VR Assets and helpers",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgwill/assets-vr-1909.git"
+  },
+  "keywords": [
+    "vr",
+    "assets"
+  ],
+  "author": "Guillaume D.Isabelle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgwill/assets-vr-1909/issues"
+  },
+  "homepage": "https://github.com/jgwill/assets-vr-1909#readme",
+  "dependencies": {
+    "pad-number": "0.0.4"
+  }
+}
