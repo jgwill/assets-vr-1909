@@ -7,7 +7,7 @@
 var pad = require('pad-number');
 
 var args = process.argv.slice(2);
-console.log(` -- Guillaume D.Isabelle Sequence Renamer, v0.0.1`);
+console.log(` -- RENQ Guillaume D.Isabelle Sequence Renamer, v0.0.1`);
 
 if (args[0] == "--help" || args[0] == "--h" || args[0] == "-h" )
 {
@@ -15,8 +15,8 @@ if (args[0] == "--help" || args[0] == "--h" || args[0] == "-h" )
     ===SYNOPSIS===
     ${process.argv.slice(0)[0]} [startNo] [ext] ([mv cmd])
     ex.
-    rens 60 jpg
-    rens 60 jpg "git mv"
+    ${process.argv.slice(0)[0]} 60 jpg
+    ${process.argv.slice(0)[0]} 60 jpg "git mv"
     
     `);
 }
